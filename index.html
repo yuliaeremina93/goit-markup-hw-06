@@ -452,6 +452,19 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="footer-subscribe">
+                        <h4 class="footer-title">Подпишитесь на рассылку</h4>
+                        <form class="subscription-form">
+                            <label for="email"></label>
+                            <input type="text" class="email-field" id="email" placeholder="E-mail">
+                            <button type="submit" class="subscribe-button">
+                                Подписаться
+                                <svg class="subscribe-icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
 
                 </div>
 
@@ -460,12 +473,64 @@
         </footer>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <button type="button" class="modal-button" data-modal-close>
+                        <button type="button" class="modal-close-button" data-modal-close>
                             <svg class="modal-icon" width="11" height="11">
                                 <use href="./images/symbol-defs.svg#icon-cross">
                                 </use>
                             </svg>
                         </button>
+                        <h3 class="registration-title">Оставьте свои данные, мы вам перезвоним</h3>
+                        <form class="registration-form">
+                            <div class="registration-div">
+                                <label for="name" class="registration-label">Имя</label>
+                                <span class="registration-input">
+                                <input type="text" id="name" class="registration-field">
+                                <svg class="registration-icon" width="12" height="12">
+                                    <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                                </svg>
+                                </span>
+                            </div>
+                            
+                            <div class="registration-div">
+                                <label for="phone" class="registration-label">Телефон</label>
+                                <span class="registration-input">
+                                <input type="tel" id="phone" class="registration-field">
+                                <svg class="registration-icon" width="13" height="13">
+                                    <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                                </svg>
+                                </span>
+                            </div>
+                            
+                            <div class="registration-div">
+                                <label for="registration-email" class="registration-label">
+                                    Почта</label>
+                                <span class="registration-input">
+                                <input type="email" id="registration-email" class="registration-field">
+                                <svg class="registration-icon" width="15" height="12">
+                                    <use href="./images/symbol-defs.svg#icon-mail-black"></use>
+                                </svg>
+                                </span>
+                            </div>
+                            <div class="registration-div">
+                                <label for="comment" class="registration-label">Комментарий</label>
+                                <textarea name="additional-comment" id="comment" placeholder="Введите текст" class="registration-comment"></textarea>
+                            </div>
+                            <div class="registration-div">
+                                <input type="checkbox" class="visually-hidden checkbox" name="policy" id="checkbox-agreed">
+                                <label for="checkbox-agreed" class="checkbox-text">
+                                    <span class="check-custom">
+                                        <svg width="11" height="8">
+                                            <use href="./images/symbol-defs.svg#icon-icon-check"></use>
+                                        </svg>
+                                    </span>
+                                    Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link"> Условия договора</a></label>
+                            </div>
+                            
+                            <button type="submit" class="modal-button">
+                                Отправить
+                            </button>
+
+                        </form>
                     </div>
                 </div>
     </main>
